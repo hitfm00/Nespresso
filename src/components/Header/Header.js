@@ -11,14 +11,14 @@ export default function Header() {
       <div className={s.header__inner}>
         <img src={logo} alt="logo" className={s.header__logo} />
         <div className={s.header__buttons}>
-          <a href="" className={s.header__link}>
-            <img src={invalid} alt="invalid" />
+          <a href="#" className={s.header__link}>
+            <img src={invalid} alt="invalid" className={s.header__linkImg} />
           </a>
-          <a href="" className={s.header__link}>
-            <img src={facebook} alt="facebook" />
+          <a href="#" className={s.header__link}>
+            <img src={facebook} alt="facebook" className={s.header__linkImg} />
           </a>
-          <a href="" className={s.header__link}>
-            <img src={whatsapp} alt="whatsapp" />
+          <a href="#" className={s.header__link}>
+            <img src={whatsapp} alt="whatsapp" className={s.header__linkImg} />
           </a>
         </div>
       </div>
