@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 31.5px;
+  }
+  &__logo {
+    z-index: 2;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &__link {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    height: 332px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../assets/img/shadow.png');
+    z-index: 1;
+  }
+}
