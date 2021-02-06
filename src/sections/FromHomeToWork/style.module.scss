@@ -10,6 +10,34 @@
 
   z-index: 1;
 
+  &__buyCarButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    height: 80px;
+    width: 170px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    border-radius: 50px 0px 0px 50px;
+    font-weight: 600;
+    transition: cubic-bezier(0.075, 0.82, 0.765, 1);
+    transition-duration: 0.4s;
+    &:hover {
+      width: 180px;
+    }
+  }
+
+  &__buyCarButtonTitle {
+    font-size: 20px;
+    color: #b78d41;
+  }
+
   &__textBlock {
     display: flex;
     flex-direction: column;
@@ -20,9 +48,8 @@
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0 0 1em rgba(0, 0, 0, 0.5);
   }
   &__title {
-    font-size: 63px;
-    font-weight: 400;
     letter-spacing: 10px;
+    color: #fff;
   }
 
   &__text {
@@ -36,6 +63,10 @@
   &__arrowDown {
     position: relative;
     top: 100px;
+    transition: 0.4s;
+    &:hover {
+      transform: translateY(4px);
+    }
   }
 
   &__arrowDownImg {

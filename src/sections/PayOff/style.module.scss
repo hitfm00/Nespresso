@@ -1,0 +1,36 @@
+.payOff {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url('../../assets/img/payOff.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 100px;
+  }
+  &__innerBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    width: 390px;
+    font-size: 27px;
+    margin: 0;
+    line-height: 30px;
+
+    margin-bottom: 20px;
+  }
+}

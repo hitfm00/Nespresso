@@ -1,0 +1,38 @@
+.playList {
+  height: 100vh;
+
+  &__textBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__title {
+    width: 500px;
+    font-size: 3rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    width: 500px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px solid #fff;
+  }
+}

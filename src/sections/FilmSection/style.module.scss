@@ -1,0 +1,32 @@
+.filmSection {
+  display: flex;
+  height: 100vh;
+
+  &__img {
+    width: 95px;
+  }
+
+  &__leftBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #34535e;
+  }
+
+  &__rightBlock {
+    background-size: cover;
+  }
+
+  &__rightBlock,
+  &__leftBlock {
+    width: 50%;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 45px;
+    width: 450px;
+    color: #fff;
+  }
+}

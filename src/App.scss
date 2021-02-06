@@ -1,3 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
@@ -6,8 +34,87 @@
   background-size: cover;
 }
 
-button {
-  outline: none;
-  border: none;
-  background: none;
+.title {
+  &--80 {
+    color: #000;
+    font-size: 63px;
+    font-weight: bold;
+  }
+  &--70 {
+    font-size: 44px;
+  }
+}
+
+// Transition for buttons
+$transitionBoxShadow: box-shadow 0.3s ease-in-out;
+$transition: 0.2s ease-in-out;
+.btn {
+  &__outline {
+    border: 2px solid #000;
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: $transition;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__filled {
+    background: #000;
+    color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    box-shadow: 0 0 0 0pt #fff;
+    transition: $transitionBoxShadow;
+
+    &:hover {
+      box-shadow: 0 0 0 3px #fff;
+    }
+  }
+}
+
+.svg {
+  &__hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.4s;
+    &:hover {
+      transform: scale(1.05);
+      path {
+        fill: rgb(230, 230, 230);
+      }
+    }
+  }
+
+  &__hover--outline {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.4s;
+    &:hover {
+      transform: scale(1.1);
+      fill: rgb(0, 34, 107);
+    }
+  }
+}
+
+.filmSection {
+  &--1 {
+    background-image: url('./assets/img/nameFilmBg.jpg');
+  }
+
+  &--2 {
+    background-image: url('./assets/img/nameFilmBg2.jpg');
+  }
+  &--3 {
+    background-image: url('./assets/img/nameFilmBg3.jpg');
+  }
 }
