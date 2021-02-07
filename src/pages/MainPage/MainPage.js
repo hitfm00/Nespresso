@@ -17,6 +17,7 @@ export default function MainPage() {
           title="שליטה באופיס"
           text="קבלו טיפים של מעצבות פנים לחדר העבודה הביתי שלכם. לא, כי הלפטופ עליכם עם הפוך בסלון לא יעבוד לאורך זמן"
           linkTo="/office_control"
+          idForScroll="withLink"
         />
         <PayOff />
         <PlayList />

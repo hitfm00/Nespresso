@@ -9,8 +9,9 @@ import AuthProvider from './components/context/AuthContext';
 import SignUp from './pages/SignUp/SignUp';
 import PasswordReset from './pages/PasswordReset/PasswordReset';
 import Dashboard from './pages/Dashboard/Dashboard';
-
+import { configureAnchors } from 'react-scrollable-anchor';
 function App() {
+  configureAnchors({ scrollDuration: 1000 });
   return (
     <Router>
       <AuthProvider>

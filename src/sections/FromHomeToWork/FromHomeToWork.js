@@ -23,11 +23,11 @@ export default function FromHomeToWork() {
             השנה האחרונה לימדה אותנו שלפעמים אנחנו באמת ישנים במשרד, אז הנה כל
             מה שצריך לדעת כדי לגרום לבית שלכם לעבוד
           </p>
-          <button className={s.fromHomeToWork__arrowDown}>
+          <a href="#withLink" className={s.fromHomeToWork__arrowDown}>
             <ArrowDown
               className={`svg__hover--outline ${s.fromHomeToWork__arrowDownImg}`}
             />
-          </button>
+          </a>
         </div>
       </Container>
     </section>
