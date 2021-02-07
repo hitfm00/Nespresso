@@ -6,6 +6,7 @@ export default function DesignItem(props) {
   const { title, imgUrl, backText } = props;
   return (
     <Col
+      sm={6}
       md={6}
       lg={4}
       xl={3}

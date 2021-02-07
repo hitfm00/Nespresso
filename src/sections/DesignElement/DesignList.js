@@ -10,7 +10,7 @@ import { Row } from 'react-bootstrap';
 
 export default function DesignList() {
   return (
-    <Row md={'12'}>
+    <Row className="w-100">
       <DesignItem
         title={'תעודת הוקרה ממוסגרת'}
         backText="הי, מרחוק אפשר לטעות ולחשוב שסיימת רפואה בהצטיינות"

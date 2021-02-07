@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: vw_d(30);
+    margin-bottom: vw_d(70);
   }
   &__title {
     width: vw_d(1082);
@@ -109,46 +109,71 @@
 }
 
 @media (max-width: 1200px) {
-  .designElement {
-    &__item {
-      height: vw_m(90);
-      width: 100%;
-    }
+  .flipCard {
+    width: vw_m(100);
+    height: vw_m(100);
   }
-}
 
-@media (max-width: 992px) {
   .designElement {
-    &__text {
-      font-size: vw_m(8);
-    }
-
-    &__item {
-      width: 100%;
-      height: vw_m(100);
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .designElement {
-    &__item {
-      width: 100%;
-      height: vw_m(120);
-      margin-bottom: vw_m(20);
-    }
-
-    &__text {
-      font-size: vw_m(12);
-    }
-
     &__img {
       height: vw_m(80);
     }
   }
 }
 
+@media (max-width: 992px) {
+  .flipCard {
+    width: vw_m(130);
+    height: vw_m(130);
+  }
+
+  .designElement {
+    &__img {
+      height: vw_m(100);
+    }
+  }
+
+  .designElement {
+    &__text {
+      font-size: vw_m(8);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .designElement {
+    &__block {
+      width: vw_m(300);
+      margin-bottom: vw_m(30);
+    }
+    &__title {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+      font-size: vw_m(12);
+    }
+  }
+}
+
 @media (max-width: 576px) {
+  .flipCard {
+    width: 100%;
+    height: vw_m(160);
+
+    &__front {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .designElement {
+    &__img {
+      height: vw_m(100);
+    }
+  }
   .designElement {
     &__item {
       height: vw_m(150);
@@ -165,12 +190,14 @@
 }
 
 @media (max-width: 360px) {
+  .flipCard {
+    width: 100%;
+    height: vw_m(200);
+  }
+
   .designElement {
-    &__item {
-      height: vw_m(240);
-    }
     &__img {
-      height: vw_m(180);
+      height: vw_m(130);
     }
   }
 }
