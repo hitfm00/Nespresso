@@ -72,3 +72,12 @@
     }
   }
 }
+
+@media (max-width: 360px) {
+  .filmSection {
+    &__title {
+      width: 100%;
+      font-size: vw_d(100);
+    }
+  }
+}

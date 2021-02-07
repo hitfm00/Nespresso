@@ -83,16 +83,19 @@
     &__poweredByImg {
       height: vw_m(15);
     }
+    &__bannerText {
+      font-size: vw_m(20);
+    }
   }
 }
 @media (max-width: 360px) {
   .footer {
     &__poweredBy {
-      font-size: vw_m(14);
-      height: vw_m(24);
+      font-size: vw_m(15);
+      height: vw_m(30);
     }
     &__poweredByImg {
-      height: vw_m(17);
+      height: vw_m(18);
     }
   }
 }
