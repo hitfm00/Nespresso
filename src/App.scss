@@ -126,6 +126,12 @@ $transition: 0.2s ease-in-out;
   }
 }
 
+.form {
+  &__block {
+    width: 350px;
+  }
+}
+
 @media (max-width: 992px) {
   .btn {
     &__outline,
@@ -164,6 +170,11 @@ $transition: 0.2s ease-in-out;
 }
 
 @media (max-width: 576px) {
+  .form {
+    &__block {
+      width: 100%;
+    }
+  }
   .btn {
     &__outline,
     &__filled {
