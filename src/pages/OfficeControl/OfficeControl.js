@@ -12,13 +12,13 @@ export default function OfficeControl() {
     <section className={s.officeControl}>
       <div className={s.officeControl__main}>
         <h1 className={`title--70 ${s.officeControl__title}`}>שליטה באופיס</h1>
-        <p className={s.officeControl__subtitle}>
+        <p className={s.officeControl__subTitle}>
           קבלו טיפים של מעצבות פנים לחדר העבודה הביתי שלכם. לא, כי הלפטופ עליכם
           עם הפוך בסלון לא יעבוד לאורך זמן
         </p>
         <img
           src={photo1}
-          alt="photo"
+          alt="Coffee"
           className={`${s.officeControl__img} ${s.officeControl__imgFirst}`}
         />
         <span className={s.officeControl__text}>
@@ -46,7 +46,7 @@ export default function OfficeControl() {
             <div>
               <img
                 src={photo2}
-                alt="Photo 2"
+                alt="Women"
                 className={`${s.officeControl__img} ${s.officeControl__imgSecond}`}
               />
               <p className={s.officeControl__textUnderPhoto}>
@@ -58,7 +58,7 @@ export default function OfficeControl() {
             <div>
               <img
                 src={photo3}
-                alt="Photo 3"
+                alt="Women"
                 className={`${s.officeControl__img} ${s.officeControl__imgSecond}`}
               />
               <p className={s.officeControl__textUnderPhoto}>
