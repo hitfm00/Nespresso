@@ -1,5 +1,4 @@
 import React from 'react';
-import play from '../../assets/img/play.svg';
 import Play from '../../components/svg/Play';
 import s from './style.module.scss';
 

@@ -1,28 +1,28 @@
+@import '../../units.scss';
 .designElement {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  padding-top: 150px;
+  padding-top: vw_d(150);
 
   &__block {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: vw_d(30);
   }
   &__title {
-    width: 600px;
-    margin-bottom: 15px;
+    width: vw_d(1082);
+    margin-bottom: vw_d(15);
   }
 
   &__text {
     display: flex;
     justify-content: center;
-    font-size: 25px;
-    width: 400px;
+    font-size: vw_d(30);
+    width: vw_d(606);
   }
 
   &__list {
@@ -30,7 +30,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 1100px;
+    margin: 0;
+    padding: 0;
   }
 
   &__item {
@@ -38,22 +39,88 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: vw_d(335);
+    height: vw_d(335);
     background-color: #fff;
-    margin-right: 20px;
     overflow: hidden;
     border-radius: 15px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: vw_d(20);
+    padding-bottom: vw_d(20);
+    padding-top: vw_d(20);
   }
 
   &__img {
-    width: 150px;
+    height: vw_d(260);
   }
 
   &__itemTitle {
     font-weight: 600;
+    padding-left: vw_d(40);
+    padding-right: vw_d(40);
+  }
+}
+@media (max-width: 1200px) {
+  .designElement {
+    &__item {
+      height: vw_m(90);
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .designElement {
+    &__text {
+      font-size: vw_m(8);
+    }
+
+    &__item {
+      width: 100%;
+      height: vw_m(100);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .designElement {
+    &__item {
+      width: 100%;
+      height: vw_m(120);
+    }
+
+    &__text {
+      font-size: vw_m(12);
+    }
+
+    &__img {
+      height: vw_m(80);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .designElement {
+    &__item {
+      height: vw_m(150);
+    }
+    &__text {
+      font-size: vw_m(16);
+      top: 20px;
+      width: 100%;
+    }
+    &__img {
+      height: vw_m(100);
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .designElement {
+    &__item {
+      height: vw_m(240);
+    }
+    &__img {
+      height: vw_m(180);
+    }
   }
 }

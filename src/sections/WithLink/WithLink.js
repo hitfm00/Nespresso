@@ -1,18 +1,21 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import s from './style.module.scss';
 
 export default function WithLink(props) {
-  const { title, text, linkTo, className } = props;
+  const { title, text, linkTo } = props;
   return (
     <section className={s.withLink}>
-      <div className={s.withLink__textBlock}>
-        <h1 className={`title--80 ${s.withLink__title}`}>{title}</h1>
-        <p className={s.withLink__text}>{text}</p>
-        <NavLink className={`btn__outline ${s.withLink__button}`} to={linkTo}>
-          {'<< לכתבה מלאה'}
-        </NavLink>
-      </div>
+      <Container className="d-flex justify-content-center align-items-center">
+        <div className={s.withLink__textBlock}>
+          <h1 className={`title--80`}>{title}</h1>
+          <p className={s.withLink__text}>{text}</p>
+          <NavLink className={`btn__outline ${s.withLink__button}`} to={linkTo}>
+            {'<< לכתבה מלאה'}
+          </NavLink>
+        </div>
+      </Container>
     </section>
   );
 }

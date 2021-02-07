@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Header.module.scss';
 import logo from '../../assets/img/logo.svg';
-import whatsapp from '../../assets/img/whatsapp.svg';
 import Invalid from '../svg/Invalid';
 import Facebook from '../svg/Facebook';
 import WhatsApp from '../svg/WhatsApp';

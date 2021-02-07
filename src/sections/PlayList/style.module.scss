@@ -1,3 +1,4 @@
+@import '../../units.scss';
 .playList {
   height: 100vh;
 
@@ -6,33 +7,120 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-bottom: vw_d(80);
   }
 
   &__title {
-    width: 500px;
-    font-size: 3rem;
+    width: 600px;
   }
 
   &__text {
-    font-size: 1.8rem;
+    font-size: vw_d(40);
     width: 500px;
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    width: 880px;
+    justify-content: center;
   }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: vw_d(361);
+    height: vw_d(361);
     position: relative;
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 50%;
     border: 2px solid #fff;
+  }
+
+  &__playButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: vw_d(115);
+    height: vw_d(115);
+  }
+
+  &__play {
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .playList {
+    &__text {
+      font-size: vw_m(8);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .playList {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    &__title {
+      width: 100%;
+    }
+    &__text {
+      font-size: vw_m(12);
+    }
+
+    &__item {
+      width: vw_m(100);
+      height: vw_m(100);
+      margin-bottom: vw_m(10);
+    }
+    &__playButton {
+      width: vw_m(50);
+      height: vw_m(50);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .playList {
+    &__item {
+      width: vw_m(150);
+      height: vw_m(150);
+    }
+    &__text {
+      font-size: vw_m(16);
+      top: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .playList {
+    &__item {
+      width: vw_m(220);
+      height: vw_m(220);
+    }
+    &__playButton {
+      width: vw_m(100);
+      height: vw_m(100);
+    }
   }
 }

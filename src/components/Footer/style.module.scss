@@ -1,0 +1,98 @@
+@import '../../units.scss';
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vw_d(320);
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &__bannerText {
+    font-size: vw_d(60);
+    font-weight: 600;
+  }
+
+  &__poweredBy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vw_d(50);
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    font-size: vw_d(17);
+  }
+
+  &__poweredByImg {
+    margin-right: 10px;
+    height: vw_d(23);
+  }
+
+  &__delimiter {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__poweredByImg {
+      height: vw_m(8);
+    }
+    &__poweredBy {
+      font-size: vw_m(6);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__poweredBy {
+      font-size: vw_m(8);
+      height: vw_m(16);
+    }
+    &__poweredByImg {
+      height: vw_m(11);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    &__poweredBy {
+      font-size: vw_m(10);
+      height: vw_m(18);
+    }
+    &__poweredByImg {
+      height: vw_m(11);
+    }
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    &__poweredBy {
+      font-size: vw_m(12);
+      height: vw_m(22);
+    }
+    &__poweredByImg {
+      height: vw_m(15);
+    }
+  }
+}
+@media (max-width: 360px) {
+  .footer {
+    &__poweredBy {
+      font-size: vw_m(14);
+      height: vw_m(24);
+    }
+    &__poweredByImg {
+      height: vw_m(17);
+    }
+  }
+}

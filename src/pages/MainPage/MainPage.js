@@ -5,6 +5,8 @@ import PlayList from '../../sections/PlayList/PlayList';
 import FilmSection from '../../sections/FilmSection/FilmSection';
 import WithLink from '../../sections/WithLink/WithLink';
 import DesignElement from '../../sections/DesignElement/DesignElement';
+import AboutSlider from '../../sections/AboutSlider/AboutSlider';
+import Footer from '../../components/Footer/Footer';
 
 export default function MainPage() {
   return (
@@ -43,6 +45,9 @@ export default function MainPage() {
           title="כותרת לסרט 2 בשתי שורות ארוכות"
           className="filmSection--3"
         />
+        <AboutSlider />
+
+        <Footer />
       </div>
     </main>
   );

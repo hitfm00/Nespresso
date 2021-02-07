@@ -1,3 +1,5 @@
+@import '../../units.scss';
+
 .fromHomeToWork {
   display: flex;
   justify-content: center;
@@ -17,8 +19,8 @@
     flex-direction: column;
     background: #000;
     position: absolute;
-    height: 80px;
-    width: 170px;
+    height: vw_d(80);
+    width: vw_d(170);
     right: 0;
     top: 0;
     bottom: 0;
@@ -28,14 +30,18 @@
     font-weight: 600;
     transition: cubic-bezier(0.075, 0.82, 0.765, 1);
     transition-duration: 0.4s;
+
     &:hover {
-      width: 180px;
+      width: vw_d(180);
     }
   }
 
   &__buyCarButtonTitle {
-    font-size: 20px;
+    font-size: vw_d(20);
     color: #b78d41;
+  }
+  &__buyCarButtonText {
+    font-size: vw_d(15);
   }
 
   &__textBlock {
@@ -44,17 +50,18 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 84px;
+    top: vw_d(84);
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0 0 1em rgba(0, 0, 0, 0.5);
   }
   &__title {
     letter-spacing: 10px;
     color: #fff;
+    font-weight: 400;
   }
 
   &__text {
-    width: 330px;
-    font-size: 21px;
+    width: 350px;
+    font-size: vw_d(29);
     position: relative;
     top: 67px;
     text-align: center;
@@ -71,5 +78,90 @@
 
   &__arrowDownImg {
     width: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fromHomeToWork {
+    &__buyCarButton {
+      width: vw_m(40);
+      &:hover {
+        width: vw_m(45);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .fromHomeToWork {
+    &__text {
+      font-size: vw_m(8);
+    }
+    &__buyCarButton {
+      width: vw_m(55);
+      height: vw_m(22);
+    }
+    &__buyCarButtonTitle {
+      font-size: vw_m(6);
+    }
+    &__buyCarButtonText {
+      font-size: vw_m(4);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .fromHomeToWork {
+    &__text {
+      font-size: vw_m(12);
+    }
+    &__buyCarButton {
+      width: vw_m(66);
+      height: vw_m(26);
+    }
+    &__buyCarButtonTitle {
+      font-size: vw_m(7);
+    }
+    &__buyCarButtonText {
+      font-size: vw_m(5);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .fromHomeToWork {
+    &__text {
+      font-size: vw_m(16);
+      top: 20px;
+      width: 100%;
+    }
+
+    &__buyCarButton {
+      width: vw_m(80);
+      height: vw_m(35);
+      bottom: vw_m(200);
+    }
+    &__buyCarButtonTitle {
+      font-size: vw_m(9);
+    }
+    &__buyCarButtonText {
+      font-size: vw_m(7);
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .fromHomeToWork {
+    &__buyCarButton {
+      width: vw_m(140);
+      height: vw_m(55);
+      bottom: vw_m(400);
+    }
+    &__buyCarButtonTitle {
+      font-size: vw_m(11);
+    }
+    &__buyCarButtonText {
+      font-size: vw_m(9);
+    }
   }
 }

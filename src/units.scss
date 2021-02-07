@@ -1,0 +1,7 @@
+@function vw_m($val, $base: 375) {
+  @return $val / $base * 100 + vw;
+}
+
+@function vw_d($val) {
+  @return $val / 1920 * 100 + vw;
+}
