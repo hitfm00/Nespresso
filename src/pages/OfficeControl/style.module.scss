@@ -1,0 +1,90 @@
+@import '../../units.scss';
+.officeControl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/img/bg-officeControl.jpg');
+  height: 100%;
+  padding-top: vw_d(204);
+
+  &__title {
+    font-weight: 600;
+  }
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: vw_d(144);
+    padding-right: vw_d(144);
+    padding-top: vw_d(111);
+    padding-bottom: vw_d(94);
+    margin-bottom: vw_d(200);
+    background-color: #fff;
+    width: vw_d(1280);
+    border-radius: 100px;
+  }
+  &__subtitle {
+    width: vw_d(637);
+    font-size: vw_d(40);
+    margin-bottom: vw_d(100);
+  }
+
+  &__text {
+    display: block;
+    text-align: right;
+    font-size: vw_d(26);
+    margin-bottom: vw_d(57);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__imgFirst {
+    margin-bottom: vw_d(83);
+  }
+
+  &__imgSecond {
+    margin-bottom: vw_d(16);
+  }
+
+  &__textUnderPhoto {
+    font-size: vw_d(20);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: vw_d(100);
+  }
+
+  &__innerItem {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: vw_d(85);
+  }
+
+  &__itemText {
+    margin-right: vw_d(63);
+    text-align: right;
+  }
+
+  &__itemId {
+    display: flex;
+    align-items: center;
+    font-size: vw_d(191);
+    color: #dfd4ca;
+    font-weight: 600;
+    height: 90px;
+  }
+
+  &__footer {
+    font-weight: 600;
+    font-size: vw_d(30);
+  }
+}

@@ -74,6 +74,11 @@
     font-size: vw_d(30);
   }
 
+  &__mainTitle {
+    width: vw_d(736);
+    font-size: vw_d(40);
+  }
+
   @media (max-width: 768px) {
     .aboutSlider {
       &__about {
@@ -83,8 +88,29 @@
       &__sliderWrapper {
         width: 100%;
       }
-      &__title {
-        font-size: vw_m(8);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutSlider {
+    &__mainTitle {
+      width: vw_m(300);
+      font-size: vw_m(14);
+    }
+    &__title {
+      font-size: vw_m(13);
+    }
+
+    &__itemBlock {
+      margin-right: 10px;
+    }
+
+    &__item {
+      &:before {
+        background-size: 53.5%;
+        top: 10px;
+        left: 22px;
       }
     }
   }

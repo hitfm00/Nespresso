@@ -5,7 +5,7 @@ import PlayListItem from './PlayListItem';
 
 export default function PlayList() {
   return (
-    <section class={s.playList}>
+    <section class={`py-5 py-md-0 ${s.playList}`}>
       <Container className="h-100">
         <div className={s.playList__wrapper}>
           <div className={s.playList__textBlock}>

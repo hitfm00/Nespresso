@@ -23,7 +23,8 @@
   &__title {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: vw_d(570);
+    font-size: vw_d(60);
     margin-bottom: 10px;
   }
   &__text {
@@ -43,7 +44,8 @@
     }
 
     &__title {
-      font-size: vw_m(18);
+      width: vw_m(150);
+      font-size: vw_m(14);
     }
   }
 }
@@ -57,7 +59,9 @@
     }
 
     &__title {
-      font-size: vw_m(22);
+      width: vw_m(190);
+
+      font-size: vw_m(20);
     }
 
     &__block {
@@ -85,6 +89,8 @@
     }
 
     &__title {
+      width: 100%;
+
       font-size: vw_m(26);
     }
   }

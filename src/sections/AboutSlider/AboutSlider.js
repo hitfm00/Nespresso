@@ -13,8 +13,9 @@ export default function AboutSlider() {
         <div className={s.aboutSlider__textBlock}>
           <h4 className="title--80">במקום זה, מתקדמים לזה</h4>
           <div className="d-flex justify-content-center align-items-center h-100">
-            <p className={s.aboutSlider__title}>
-              מתקדמים ל-ורטו של Nespresso. החלק הכי כיפי ביום העבודה שלך.{' '}
+            <p className={s.aboutSlider__mainTitle}>
+              כי האמת היא שמספיקה ישיבת זום אחת כדי שידעו עליך יותר ממה שרצית
+              לספר
             </p>
           </div>
         </div>

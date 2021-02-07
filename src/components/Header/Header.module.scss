@@ -1,3 +1,5 @@
+@import '../../units.scss';
+
 .header {
   position: absolute;
   top: 0;
@@ -11,7 +13,7 @@
     padding: 13px 28px 0px 23px;
   }
   &__logo {
-    width: 178px;
+    width: vw_d(235);
     z-index: 4;
   }
 
@@ -30,5 +32,35 @@
 
   &__linkImg {
     width: 22px;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    &__logo {
+      width: vw_m(80);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__logo {
+      width: vw_m(100);
+    }
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    &__logo {
+      width: vw_m(120);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &__logo {
+      width: vw_m(150);
+    }
   }
 }
