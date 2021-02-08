@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Form, Card, Button, Alert, Container } from 'react-bootstrap';
 import { useAuth } from '../../components/context/AuthContext';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export default function PasswordReset() {
   const emailRef = useRef();
@@ -9,6 +9,7 @@ export default function PasswordReset() {
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
+  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -18,8 +19,9 @@ export default function PasswordReset() {
       setLoading(true);
       await resetPassword(emailRef.current.value);
       setMessage('Check your inbox for further instructions');
-    } catch {
-      setError('Failed to reset password');
+      history.push('/login');
+    } catch (e) {
+      setError(e);
     }
     setLoading(false);
   }

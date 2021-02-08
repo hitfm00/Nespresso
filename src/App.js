@@ -1,11 +1,6 @@
 import './App.scss';
 import './fonts.scss';
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import MainPage from './pages/MainPage/MainPage';
 import OfficeControl from './pages/OfficeControl/OfficeControl';

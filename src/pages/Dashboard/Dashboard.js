@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Accordion, Button, Col, Container, Row } from 'react-bootstrap';
+import { Accordion, Button, Col, Row } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import { useAuth } from '../../components/context/AuthContext';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Alert } from 'react-bootstrap';
 import UpdateProfile from './UpdateProfile';
 import s from './style.module.scss';
