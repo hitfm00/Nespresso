@@ -30,7 +30,7 @@ export default function AboutSlider() {
                 />
                 <div className="d-flex justify-content-center align-items-center h-100">
                   <p className={s.aboutSlider__title}>
-                    מתקדמים ל-ורטו של Nespressos. החלק הכי כיפי ביום העבודה שלך.{' '}
+                    מתקדמים ל-ורטו של Nespresso. החלק הכי כיפי ביום העבודה שלך.{' '}
                   </p>
                 </div>
               </div>
